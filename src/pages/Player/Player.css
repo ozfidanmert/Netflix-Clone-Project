@@ -1,0 +1,34 @@
+.player {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.back-arrow {
+    position: absolute;
+    top: 5px;
+    left: 2px;
+    width: 55px;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.player .player-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 10px;
+}
+.player-info p{
+    font-weight: 200;
+    color: #ffffff80;
+}
+.player-info span{
+    color: #ffffffe5;
+    font-weight: 500;
+    margin-left: 4px;
+}

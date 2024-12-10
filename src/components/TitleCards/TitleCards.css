@@ -1,0 +1,79 @@
+.title-cards {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.title-cards h2 {
+    margin-bottom: 8px;
+}
+
+.title-cards .card-list {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-right: 15px;
+    z-index: 99;
+    scrollbar-width: thin;
+    /* İnce bir scrollbar */
+    scrollbar-color: #1e1e1e6c #201f1f24;
+    /* Scrollbar rengi (iç ve dış) */
+}
+
+.title-cards .card-list::-webkit-scrollbar {
+    display: none;
+}
+
+.card-list img {
+    width: 240px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.card-list .card {
+    position: relative;
+    transition: ease-in-out 0.5s;
+}
+
+.card-list p {
+    position: absolute;
+    bottom: 9px;
+    text-align: end;
+    right: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width:800px) {
+    .title-cards{
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+    .title-cards h2{
+        font-size: 20px;
+    }
+    .card-list img{
+        width: 200px;
+    }
+    .card-list p{
+        font-size: 13px;
+    }
+}
+@media (max-width:500px) {
+    .title-cards{
+        margin-bottom: 0;
+    }
+    .title-cards h2{
+        font-size: 15px;
+    }
+    .card-list img{
+        width: 175px;
+    }
+    .card-list p{
+        font-size: 11px;
+    }
+}

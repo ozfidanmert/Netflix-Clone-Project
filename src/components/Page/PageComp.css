@@ -1,0 +1,83 @@
+.pages {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 7%;
+}
+
+.pages-content {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.pages button {
+    padding: 8px 20px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15.5px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background-color: rgba(30, 30, 30, 0.764);
+    color: #fff;
+}
+
+.pages button:hover {
+    background-color: rgba(43, 43, 43, 0.741);
+}
+
+.pages .info-page {
+    max-width: 145px;
+    display: flex;
+    text-align: center;
+    border: 3px solid rgba(60, 60, 60, 0.741);
+    border-radius: 3px;
+    
+}
+
+.pages .info-page input {
+    width: 100%;
+    padding: 5px 0;
+    border-radius: 2px;
+    text-align: center;
+    background-color: rgba(30, 30, 30, 0.764);
+    color: #fff;
+    font-weight: 500;
+    font-size: 15.5px;
+    border: none;
+}
+
+.pages .info-page span {
+    margin: 0 3px;
+}
+
+.pages .info-page p {
+    background-color: rgba(30, 30, 30, 0.764);
+    color: #fff;
+    font-weight: 500;
+    font-size: 15.5px;
+    padding: 0 7px;
+    border-radius: 2px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.pages .of {
+    padding: 0 2px;
+}
+
+
+@media (max-width: 480px) {
+    .pages button {
+        padding: 8px 12px;
+        
+    }
+    .pages {
+        justify-content: center;
+        padding-right: 0%;
+    }
+}

@@ -1,0 +1,234 @@
+.main {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.main-home {
+    padding: 20px 18%;
+    height: 100vh;
+    background-image: linear-gradient(#000000a4, #000000a4), url(/home-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.main-home .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-home .nav img {
+    max-width: 150px;
+}
+
+.main-home .nav button {
+    padding: 8px 17px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: red;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.nav button:hover {
+    background-color: rgba(255, 0, 0, 0.791);
+}
+
+.home-content {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.home-content h1 {
+    font-size: 55px;
+    max-width: 600px;
+    font-weight: 800;
+}
+
+.home-content h3 {
+    max-width: 650px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+
+}
+
+.home-content p {
+    max-width: 650px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.sign-up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sign-up input {
+    border: 1px solid #ffffff3d;
+    outline: none;
+    width: 450px;
+    height: 58px;
+    margin-right: 1px;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 15px;
+    background: rgba(0, 0, 0, 0.576);
+    color: #fff;
+}
+
+.sign-up input::placeholder {
+    color: #989898;
+    font-size: 17px;
+}
+
+.sign-up button {
+    color: #fff;
+    background: red;
+    border-radius: 3px;
+    padding: 16px 30px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.sign-up button:hover {
+    background-color: rgba(255, 0, 0, 0.791);
+}
+
+.main-home hr {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border: none;
+    background-color: rgb(100, 100, 100);
+}
+
+
+.main-content {
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-content hr {
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: rgba(100, 100, 100, 0.304);
+}
+
+.main-content-one {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 60px;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.main-content-one img {
+    max-width: 550px;
+    transition: 0.4s ease-in-out;
+}
+
+.main-content-one img:hover {
+    transform: scale(1.02);
+}
+
+.content-text {
+    width: 100%;
+}
+
+.content-text h1 {
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+@media (max-width:1300px) {
+    .main-content-one {
+        grid-template-columns: 1fr;
+        gap: 0;
+        margin-top: 15px;
+        justify-items: center;
+    }
+}
+
+@media (max-width:580px) {
+    .home-content{
+        top: 55%;
+    }
+    .main-home{
+        padding: 20px 5%;
+    }
+    .home-content h1 {
+        font-size: 34px;
+        max-width: 600px;
+        font-weight: 700;
+    }
+
+    .home-content h3 {
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 15px;
+
+    }
+
+    .home-content p {
+        font-weight: 400;
+        font-size: 12px;
+        padding: 0 5px;
+    }
+
+    .sign-up input {
+        width: 275px
+    }
+
+    .sign-up button {
+        color: #fff;
+        background: red;
+        border-radius: 3px;
+        padding: 18px 15px;
+        font-size: 14px;
+    }
+
+    .main-home .nav img {
+        max-width: 95px;
+    }
+
+    .main-content-one img {
+        width: 370px;
+    }
+
+    .content-text h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .content-text p {
+        font-size: 12px;
+    }
+
+}

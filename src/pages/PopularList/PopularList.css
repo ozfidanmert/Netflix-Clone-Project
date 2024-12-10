@@ -1,0 +1,44 @@
+.popular-list{
+    background-image: linear-gradient(#00000099, #00000099),
+    url(/profile_banner3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.popular-content{
+    padding-top: 5%;
+}
+.popular-selected {
+    display: flex;
+    flex-wrap: wrap;
+    text-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: end;
+    margin-right: 6%;
+    margin-bottom: -4.5%;
+    margin-top: 40px;
+    
+}
+
+.popular-selected select {
+
+    padding: 7px 28px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid rgba(177, 199, 250, 0.858);
+    letter-spacing: 0.3px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffffe9;
+    background-color: black;
+}
+
+
+@media (max-width: 900px) {
+    .popular-selected {
+        margin-top: 55px;
+    }
+}

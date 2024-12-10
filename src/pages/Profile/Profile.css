@@ -1,0 +1,101 @@
+.profile{
+    background-image: linear-gradient(#00000080, #00000040),
+    url(/profile_banner4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.profile-content {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.profile-content form{
+    border: 1px solid rgba(61, 60, 60, 0.755);
+    border-radius: 7px;
+    padding: 45px 20px;
+    backdrop-filter: blur(5px);
+}
+.profile-content .profile-form h1{
+    margin-bottom: 50px;
+    font-weight: 500;
+    text-align: center;
+    color: rgb(215, 215, 215);
+}
+.profile-content .profile-form h4{
+    text-align: end;
+    margin-bottom: 4px;
+    font-weight: 500;
+    font-size: 13.5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.profile-content .profile-form h4:hover{
+    text-decoration: underline;
+}
+
+.profile-form input{
+    padding: 10px 8px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    margin: 0 5px 10px 0;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(38, 38, 38);
+    
+}
+.profile-form input:focus{
+    border: 1px solid rgba(104, 103, 103, 0.932);
+}
+
+.profile-form input:disabled{
+    background-color: rgb(8, 8, 8);
+}
+
+.profile-form .name-edit{
+    width: 100%;
+    display: flex;
+}
+.profile-form .name-edit input{
+    width: 100%;
+}
+
+.password-input{
+    width: 100%;
+}
+
+.profile-content .profile-form button{
+    width: 100%;
+    margin: 10px 0;
+    padding: 7px;
+    font-weight: 700;
+    font-size: 17px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: rgb(214, 2, 2);
+    color: #fff;
+    
+}
+.profile-content .profile-form button:hover{
+    background-color: rgb(167, 2, 2);
+}
+
+.profile-content .profile-form p{
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+@media (max-width:700px) {
+    .profile-content form{
+        padding: 45px 10px;
+    }
+}

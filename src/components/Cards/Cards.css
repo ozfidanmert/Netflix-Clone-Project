@@ -1,0 +1,244 @@
+.cards {
+    width: 100%;
+    padding: 40px 5.5%;
+}
+
+.cards h2 {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 25px;
+    letter-spacing: 0.6px;
+}
+
+.cards .cards-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    place-items: center;
+    align-items: center;
+    gap: 11px;
+}
+
+.cards-list .card-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    z-index: 1;
+
+}
+
+.cards .card-item {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    height: 360px;
+    transition: 0.6s;
+}
+
+.card-item:hover {
+    transform: scale(1.05);
+}
+
+.card-item:hover .card-text,
+.card-item:hover .add-list {
+    display: flex;
+}
+
+.add-list {
+    display: none;
+    align-items: center;
+    gap: 2px;
+    position: absolute;
+    top: 1px;
+    right: 0;
+    border: 1px solid rgba(185, 185, 185, 0.111);
+    padding: 3px 5px;
+    border-radius: 4px;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+}
+
+.add-list p {
+    font-weight: 500;
+    font-size: 13px;
+    color: #fff;
+}
+
+.add-list:hover {
+    box-shadow: 0 0 7px rgb(5, 1, 107);
+}
+
+.add-list:hover p {
+
+    font-size: 13.5px;
+    font-weight: 600;
+}
+
+.watch-info {
+    width: 100%;
+    margin: 4% 0;
+}
+
+.watch-info h1 {
+    letter-spacing: 1px;
+    color: rgb(239, 230, 230);
+    text-align: center;
+}
+
+
+.card-text {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 7px 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    background-color: rgba(0, 0, 0, 0.813);
+    transition: all 0.5s ease-in-out;
+    padding: 0 5px;
+}
+
+.card-text h5 {
+    font-size: 15px;
+    text-align: center;
+}
+
+.card-text p {
+    font-size: 12px;
+    font-style: italic;
+    margin: 4px 0;
+}
+
+.cards-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.cards-content .cards-content-input {
+    display: flex;
+    gap: 10px;
+}
+
+.cards-content .cards-content-input .genres-btn {
+    padding: 1px 30px;
+    cursor: pointer;
+    letter-spacing: 0.3px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffffef;
+    background-color: black;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid rgba(177, 199, 250, 0.858);
+}
+
+.cards-genres {
+    width: 100%;
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: -5px;
+}
+
+.genres {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: rgba(24, 24, 24, 0.371);
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.genres p {
+    border: 1px solid rgb(75, 75, 75);
+    padding: 3px 8px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+
+}
+
+.genres input {
+    cursor: pointer;
+}
+
+.selected {
+    display: flex;
+    flex-wrap: wrap;
+    text-wrap: wrap;
+    align-items: center;
+}
+
+.selected select {
+    padding: 7px 17px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid rgba(177, 199, 250, 0.858);
+    letter-spacing: 0.3px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffffe9;
+    background-color: black;
+}
+
+@media (max-width:800px) {
+    .cards-content {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .cards-content-title h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .genres {
+        width: 95%;
+        gap: 10px;
+        padding: 5px;
+    }
+}
+
+@media (max-width:520px) {
+    .cards-content-title h2 {
+        font-size: 17px;
+        text-align: center;
+    }
+    .cards .cards-list {
+        gap: 20px;
+    }
+    .watch-info h1 {
+        font-size: 20px;
+        text-decoration: underline;
+    }
+}
+
+@media (max-width:440px) {
+    .cards-content-title h2 {
+        font-size: 15px;
+    }
+    .cards-content .cards-content-input {
+        gap: 3px;
+    }
+    .watch-info h1 {
+        font-size: 16.5px;
+        text-decoration: underline;
+    }
+}

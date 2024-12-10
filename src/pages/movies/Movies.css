@@ -1,0 +1,11 @@
+.movies{
+    background-image: linear-gradient(#00000099, #00000099),
+    url(/profile_banner3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.movies-content{
+    padding-top: 5%;
+}

@@ -1,0 +1,62 @@
+.search-main{
+    background-image: linear-gradient(#00000099, #00000099),
+    url(/profile_banner3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.search-content{
+    padding-top: 7%;
+    min-height: 90vh;
+}
+
+.search-input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    gap: 3px;
+}
+.search-input input{
+    width: 50%;
+    padding: 13px 9px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgb(90, 89, 89);
+    border-radius: 4px;
+    /* outline: 1px solid rgb(131, 130, 130); */
+    color: #fff;
+}
+.search-input input:focus{
+    border: 1px solid rgb(110, 110, 110);
+}
+.search-input select{
+    padding: 11px 10px;
+    border-radius: 2px;
+    color: #fff;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgb(90, 89, 89);
+    cursor: pointer;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .search-input{
+        margin-top: 40px;
+    }
+}
+@media (max-width: 550px) {
+    .search-input{
+        margin-top: 60px;
+        margin-bottom: -30px;
+    }
+    .search-input input{
+        width: 60%;
+        padding: 10px 9px;
+    }
+    .search-input select{
+        padding: 9px 10px;
+    }
+}
